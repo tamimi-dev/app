@@ -15,76 +15,169 @@
     <meta name="description" content="Tracker">
 
     <!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="https://tamimi-dev.github.io/mobmobapp/assets/styles/style.css">
-    <link rel="stylesheet" type="text/css" href="https://tamimi-dev.github.io/mobmobapp/assets/styles/style-dark.css">
-
+	<link rel="stylesheet" type="text/css" href="https://tamimi-dev.github.io/app/assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://tamimi-dev.github.io/app/assets/styles/style-dark.css">
 	
 </head>
 <body class="bg-triangles">
     <main class="main">
 	    <div class="container gutter-top">
 		    <div class="row sticky-parent">
-
 		        
 				<!-- Content -->
 		        <div class="col-12 col-md-12 col-xl-9">
 				    <div class="box shadow pb-0">
-
-						
+					    <!-- Menu -->
+						<div class="box-inner box-inner--rounded">
 					    <!-- About -->
 						<div class="pb-3">
-		                    <h1 class="title title--h1 title__separate">By Country<img src="https://tamimi-dev.github.io/mobmobapp/assets/icons/info.png" title="According to China official numbers" data-toggle="tooltip" style="position:relative;right:-14px" width="20" height="20"></h1>
-					  <script>
+		                    <h1 class="title title--h1 title__separate">Public Health Emergency of International Concern (PHEIC)</h1>
+							<script>
 $('a[data-toggle="tooltip"]').tooltip({
     animated: 'fade',
     placement: 'bottom',
     html: true
 });
-</script>
-							
-					    
+</script>		
 					    </div>
+				
+        
+                 <h2 class="title title--h3"><img class="title-icon" src="https://tamimi-dev.github.io/app/assets/icons/r.png" alt="">Meter</h2>		
+         <div class="box box__second"> 
+         
+   <div id="gauge"></div>
+         
+            </div>
+        
+        
+         <h2 class="title title--h3"><img class="title-icon" src="https://tamimi-dev.github.io/app/assets/icons/r.png" alt="">Criteria<img src="https://tamimi-dev.github.io/app/assets/icons/info.png" title="Source: https://institut-fuer-globale-gesundheit.de/wp-content/uploads/2020/01/Final_Proposal_Scorecard_IGGB_310120.pdf" data-toggle="tooltip" style="position:relative;right:-14px" width="20" height="20"></h2>		
+	 <div class="box box__second"> 
+        
+        
+        
+         <table class="table_c" align="center">
+  <thead>
+    <tr>
+          <th scope="col">PHEIC LEVEL</th>
+      <th scope="col">Response</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+      <!-- new category -->
+    <tr>
+      <td>No PHEIC</td>
+      <td>National</td>
+      <td>12 or Less</td>
+    </tr>
+    
+    <tr>
+      <td>PHEIC Level 1</td>
+      <td>National</td>
+      <td>13 - 18</td>
+    </tr>
+    
+    <tr>
+      <td>PHEIC Level 2</td>
+      <td>Transnational (affected countries)</td>
+      <td>19 - 24</td>
+    </tr>
+    
+    <tr>
+      <td>PHEIC Level 3</td>
+      <td>International (affected and neighboring countries)</td>
+      <td>25 - 30</td>
+    </tr>
+    
+    <tr>
+      <td>PHEIC Level 4</td>
+      <td>Global</td>
+      <td>31 - 35</td>
+    </tr>
+    
+    
+    <tr>
+      <td>PHEIC Level 5</td>
+      <td>Global</td>
+      <td>More than 35</td>
+    </tr>
+   
+
+  </tbody>
+</table>      
+        
+        
+                <br>
+        
+   <table class="table_s table-sm table-hover">
+  <thead>
+    <tr>
+          <th scope="col">Criteria</th>
+      <th scope="col">1</th>
+      <th scope="col">2</th>
+      <th scope="col">3</th>
+      <th scope="col">4</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody id="score">
+
+  </tbody>
+</table>     
+        
+       
+        
+
+
+        
+        
+        
+      </div>   
+        
+        
+        
+        
+        
+        
+        
+        
+        
+   <!--     
+<table class="table table-striped table-dark">
+  <thead>
+        <tr>
+          <th>Date</th>
+          <th>Predicted</th>
+          <th>Date</th>
+		  <th>Confirmed</th>
+        </tr>
+      </thead>
+	  
+   <tbody id="predic">
+</tbody>
+</table>
+-->
+
+
+
+	</div>	
+
+	</div>			
 						
-
-						<div class="pb-0">
-							<div class="row">
-							    
-								
-							</div>
-						</div>
-						
-		
-<div class="box-inner box-inner--rounded">
-
- <div class="col-12 col-lg-12">
- <h2 class="title title--h3"><img class="title-icon" src="https://tamimi-dev.github.io/mobmobapp/assets/icons/r.png" alt="">Confirmed Cases and Deaths</h2>		
-<div id= "ico_cntry"></div>
-		
-		
-
-		
-              </div>
-
 	</div>
-						
-	
-
-	</div>						
-
-						
-						
-	</div>
-
-											
 		        
 	</div>
-		</div>
+	</div>
     </main>
+
 	<!-- JavaScripts -->
-	<script src="https://tamimi-dev.github.io/mobmobapp/assets/js/jquery-3.4.1.min.js"></script>
-	<script src="https://tamimi-dev.github.io/mobmobapp/assets/js/plugins.js"></script>
-    <script src="https://tamimi-dev.github.io/mobmobapp/assets/js/common.js"></script>
-	<script src="https://tamimi-dev.github.io/mobmobapp/assets/js/icojs.js"></script> 
+	<script src="https://tamimi-dev.github.io/app/assets/js/jquery-3.4.1.min.js"></script>
+	<script src="https://tamimi-dev.github.io/app/assets/js/plugins.js"></script>
+    <script src="https://tamimi-dev.github.io/app/assets/js/common.js"></script>
+<script src="https://tamimi-dev.github.io/app/assets/js/mjs.js"></script>
+	<script src="https://tamimi-dev.github.io/app/assets/js/meterjs.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
 
 </body>
 
