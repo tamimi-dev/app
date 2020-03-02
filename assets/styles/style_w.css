@@ -2160,7 +2160,7 @@ iframe {
   padding-top: .5rem;
   padding-bottom: 1rem;
 }
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 330px) {
   .js-carousel-clients .swiper-slide {
     text-align: center;
   }
