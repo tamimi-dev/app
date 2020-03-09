@@ -19,6 +19,7 @@
   },
           chart: {
           type: 'pie',
+                            foreColor: '#e0e0e0'
         },
         labels: labels,
         
