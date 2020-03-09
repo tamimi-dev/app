@@ -1,4 +1,4 @@
-$.getJSON("https://spreadsheets.google.com/feeds/list/1XEhGO2sCwpCrrx4O3clmomZxe9d2RIShWQoRYEzOpaI/oxcft20/public/values?alt=json", data => {
+      $.getJSON("https://spreadsheets.google.com/feeds/list/1XEhGO2sCwpCrrx4O3clmomZxe9d2RIShWQoRYEzOpaI/oxcft20/public/values?alt=json", data => {
   var labels = [];
    var seri = [];
   data.feed.entry.forEach(e => {
@@ -11,22 +11,30 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1XEhGO2sCwpCrrx4O3clmomZxe
       
       var options = {
          series: seri,
+                plotOptions: {
+     pie: {
+                    expandOnClick: true
+
+     }
+  },
           chart: {
-          width: 380,
           type: 'pie',
         },
         labels: labels,
+        
+  colors: ['#546E7A', '#E91E63'],
+
         responsive: [{
-          breakpoint: 480,
           options: {
             chart: {
-              width: 200
+                     background: '#fff'
             },
             legend: {
               position: 'bottom'
             }
           }
         }]
+
         };
 
         var chart = new ApexCharts(document.querySelector("#chart"), options);
