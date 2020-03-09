@@ -28,6 +28,6 @@
           }
         }]
         };
-        var chart = new ApexCharts(document.querySelector("#chart10"), options);
+        var chart = new ApexCharts(document.querySelector("#chart10c"), options);
         chart.render();
     });  
