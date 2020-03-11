@@ -33,7 +33,7 @@ var options = {
           name: 'Recovered',
           data: numbers5
         }],
-	colors: ['#d67f29', '#fd304c', #c107ff', '#ffc107', '#00a700'],
+colors: ['#d67f29', '#fd304c', '#c107ff', '#ffc107', '#00a700'],
 
           chart: {
           type: 'bar',
