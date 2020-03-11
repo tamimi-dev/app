@@ -33,6 +33,8 @@ var options = {
           name: 'Recovered',
           data: numbers5
         }],
+	colors: ['#d67f29', '#fd304c', #c107ff', '#ffc107', '#00a700'],
+
           chart: {
           type: 'bar',
           height: 500,
@@ -52,7 +54,7 @@ var options = {
           colors: ['#fff']
         },
         title: {
-          text: 'Fiction Books Sales'
+          text: 'China Cases'
         },
         xaxis: {
           categories: labels1,
