@@ -1,6 +1,6 @@
  async function fetchData(url) {
   const jsonData = await fetch(url).then(r => r.json());
-  const data = jsonData.feed.entry.map(e => ({
+  const datac = jsonData.feed.entry.map(e => ({
   	category: e.gsx$chinaname.$t,
     value: Number(e.gsx$provtotal.$t),
      value2: Number(e.gsx$provtotal.$t),
@@ -22,11 +22,11 @@
     }]
   }));
   
-  handleData(data);
+  handleData(datac);
 }
 
-function handleData(data) {
-    chart.data = data;
+function handleData(datac) {
+    chart.data = datac;
 }
 
 fetchData("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/otb867z/public/values?alt=json");
