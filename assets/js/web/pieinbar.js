@@ -55,7 +55,7 @@ valueAxis.renderer.grid.template.strokeOpacity = 0.07;
 
 // Create series
 var series = chart.series.push(new am4charts.ColumnSeries());
-series.dataFields.valueY = "value_bar";
+series.dataFields.value_bar = "value_bar";
 series.dataFields.categoryX = "category";
 series.tooltip.pointerOrientation = "vertical";
 
@@ -84,7 +84,7 @@ pieChart.valign = "middle";
 pieChart.dataFields.data = "pie";
 
 var pieSeries = pieChart.series.push(new am4charts.PieSeries());
-pieSeries.dataFields.value = "value_pie";
+pieSeries.dataFields.value_pie = "value_pie";
 pieSeries.dataFields.category = "title";
 pieSeries.labels.template.disabled = true;
 pieSeries.ticks.template.disabled = true;
