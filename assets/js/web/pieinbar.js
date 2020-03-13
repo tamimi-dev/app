@@ -1,3 +1,6 @@
+
+fetchData("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/otb867z/public/values?alt=json");
+
 async function fetchData(url) {
   const jsonData = await fetch(url).then(r => r.json());
   const data = jsonData.feed.entry.map(e => ({
@@ -20,26 +23,47 @@ async function fetchData(url) {
     }, {
     	title: 'Recovered',
     	value_pie: e.gsx$chinarecov.$t
-    }],
+    }]
 
-  id: e.gsx$map1.$t,
+  
+   
+  }));
+  
+ 
+
+    const jsonDatam = await fetch(url).then(r => r.json());
+  const datam = jsonDatam.feed.entry.map(e => ({
+  
+  id: e.gsx$map.$t,
 	value: Number(e.gsx$provtotal.$t),
      value2: Number(e.gsx$chinadth.$t),
       value3: Number(e.gsx$chinacrit.$t),
        value4: Number(e.gsx$chinaser.$t),
         value5: Number(e.gsx$chinarecov.$t),
-   
+
+
   }));
-  
+
+ 
   handleData(data);
-}
+  handleData(datam);
+} 
+
+
+
+
+
 
 function handleData(data) {
-    polygonSeries.data = data;
+   
 	chart.data = data;
 }
 
-fetchData("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/otb867z/public/values?alt=json");
+
+function handleData(datam) {
+ polygonSeries.data = datam;
+}
+
 
 
 
@@ -208,3 +232,4 @@ pieChart.adapter.add("verticalCenter", function(verticalCenter, target) {
   }
   return verticalCenter
 })
+
