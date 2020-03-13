@@ -48,7 +48,7 @@ function handleData(data) {
     polygonSeries.data = data;
 }
 
-fetchData("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/otb867z/public/values?alt=json");
+fetchData("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/oe6r4ae/public/values?alt=json");
 
 
 
