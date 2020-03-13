@@ -20,7 +20,7 @@ async function fetchData(url) {
     }, {
     	title: 'Recovered',
     	value_pie: e.gsx$chinarecov.$t
-    }]
+    }],
 
   id: e.gsx$map1.$t,
 	value: Number(e.gsx$provtotal.$t),
