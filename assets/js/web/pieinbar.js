@@ -55,7 +55,7 @@ valueAxis.renderer.grid.template.strokeOpacity = 0.07;
 
 // Create series
 var series = chart.series.push(new am4charts.ColumnSeries());
-series.dataFields.value_bar = "value_bar";
+series.dataFields.valueY = "value_bar";
 series.dataFields.categoryX = "category";
 series.tooltip.pointerOrientation = "vertical";
 
