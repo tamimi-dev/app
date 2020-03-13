@@ -1,6 +1,6 @@
  async function fetchDatac(url) {
-  const jsonData = await fetch(url).then(r => r.json());
-  const datac = jsonData.feed.entry.map(e => ({
+  const jsonDatac = await fetch(url).then(r => r.json());
+  const datac = jsonDatac.feed.entry.map(e => ({
   	category: e.gsx$chinaname.$t,
     value_bar: Number(e.gsx$provtotal.$t),
      value2: Number(e.gsx$provtotal.$t),
