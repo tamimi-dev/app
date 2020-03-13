@@ -2,23 +2,23 @@
   const jsonData = await fetch(url).then(r => r.json());
   const datac = jsonData.feed.entry.map(e => ({
   	category: e.gsx$chinaname.$t,
-    value: Number(e.gsx$provtotal.$t),
+    value_bar: Number(e.gsx$provtotal.$t),
      value2: Number(e.gsx$provtotal.$t),
     pie: [{
     	title: 'Cases',
-    	value: e.gsx$chinacase.$t
+    	value_pie: e.gsx$chinacase.$t
     }, {
     	title: 'Deaths',
-    	value: e.gsx$chinadth.$t
+    	value_pie: e.gsx$chinadth.$t
     }, {
     	title: 'Critical',
-    	value: e.gsx$chinacrit.$t
+    	value_pie: e.gsx$chinacrit.$t
     }, {
     	title: 'Serious',
-    	value: e.gsx$chinaser.$t
+    	value_pie: e.gsx$chinaser.$t
     }, {
     	title: 'Recovered',
-    	value: e.gsx$chinarecov.$t
+    	value_pie: e.gsx$chinarecov.$t
     }]
   }));
   
@@ -55,7 +55,7 @@ valueAxis.renderer.grid.template.strokeOpacity = 0.07;
 
 // Create series
 var series = chart.series.push(new am4charts.ColumnSeries());
-series.dataFields.valueY = "value";
+series.dataFields.valueY = "value_bar";
 series.dataFields.categoryX = "category";
 series.tooltip.pointerOrientation = "vertical";
 
@@ -84,7 +84,7 @@ pieChart.valign = "middle";
 pieChart.dataFields.data = "pie";
 
 var pieSeries = pieChart.series.push(new am4charts.PieSeries());
-pieSeries.dataFields.value = "value";
+pieSeries.dataFields.value = "value_pie";
 pieSeries.dataFields.category = "title";
 pieSeries.labels.template.disabled = true;
 pieSeries.ticks.template.disabled = true;
