@@ -1,4 +1,4 @@
- async function fetchData(url) {
+ async function fetchDatac(url) {
   const jsonData = await fetch(url).then(r => r.json());
   const datac = jsonData.feed.entry.map(e => ({
   	category: e.gsx$chinaname.$t,
@@ -29,7 +29,7 @@ function handleData(datac) {
     chart.data = datac;
 }
 
-fetchData("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/otb867z/public/values?alt=json");
+fetchDatac("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/otb867z/public/values?alt=json");
 
 // Themes begin
 am4core.useTheme(am4themes_dark);
@@ -84,7 +84,7 @@ pieChart.valign = "middle";
 pieChart.dataFields.data = "pie";
 
 var pieSeries = pieChart.series.push(new am4charts.PieSeries());
-pieSeries.dataFields.value_pie = "value_pie";
+pieSeries.dataFields.value = "value_pie";
 pieSeries.dataFields.category = "title";
 pieSeries.labels.template.disabled = true;
 pieSeries.ticks.template.disabled = true;
