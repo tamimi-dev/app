@@ -32,12 +32,12 @@ polygonSeries.useGeodata = true;
 async function fetchData(url) {
   const jsonData = await fetch(url).then(r => r.json());
   const data = jsonData.feed.entry.map(e => ({
-  	id: e.gsx$map.$t,
-    value: Number(e.gsx$provtotal.$t),
-     value2: Number(e.gsx$chinadth.$t),
-      value3: Number(e.gsx$chinacrit.$t),
-       value4: Number(e.gsx$chinaser.$t),
-        value5: Number(e.gsx$chinarecov.$t),
+  	id: e.gsx$map1.$t,
+    value: Number(e.gsx$provtotal1.$t),
+     value2: Number(e.gsx$chinadth1.$t),
+      value3: Number(e.gsx$chinacrit1.$t),
+       value4: Number(e.gsx$chinaser1.$t),
+        value5: Number(e.gsx$chinarecov1.$t),
    
   }));
   
