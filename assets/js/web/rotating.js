@@ -13,8 +13,8 @@ chart.panBehavior = "rotateLongLat";
 chart.deltaLatitude = -20;
 chart.padding(20, 20, 20, 20);
 
-chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 0.1;
-chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#ffffff");
+chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 1;
+chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#303032");
 
 chart.deltaLongitude = 20;
 chart.deltaLatitude = -20;
