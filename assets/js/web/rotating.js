@@ -16,8 +16,8 @@ chart.deltaLatitude = -20;
 chart.backgroundSeries.mapPolygons.template.polygon.fillOpacity = 1;
 chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#303032");
 
-chart.deltaLongitude = 20;
-chart.deltaLatitude = -20;
+//chart.deltaLongitude = 20;
+//chart.deltaLatitude = -20;
 
 // limits vertical rotation
 chart.adapter.add("deltaLatitude", function(delatLatitude) {
