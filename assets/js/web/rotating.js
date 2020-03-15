@@ -86,19 +86,7 @@ measelTemplate.strokeOpacity = 0;
 measelTemplate.fillOpacity = 0.75;
 measelTemplate.tooltipPosition = "fixed";
 
-let animation;
-setTimeout(function() {
-  animation = chart.animate({
-    property: "deltaLongitude",
-    to: 100000
-  }, 20000000);
-}, 3000)
 
-chart.seriesContainer.events.on("down", function() {
-  if (animation) {
-    animation.stop();
-  }
-})
 
 
 
