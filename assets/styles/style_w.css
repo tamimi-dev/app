@@ -159,6 +159,11 @@ table.table5 th {
 }
 
 table.table5 tr:nth-child(3) td:nth-child(2){
+color: #f00f07; 
+
+}
+
+table.table5 tr:nth-child(3) td:nth-child(1){
 color: #f2990a; 
 
 }
