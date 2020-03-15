@@ -148,18 +148,21 @@ table.table5 td {
   padding: 1em;
   background: #857575;
   color: #ffffff; 
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
 table.table5 th {
   padding: 1em;
   color: #d93248; 
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   font-weight: 200;
 }
 
-
+table.table5 tr:nth-child(2) {
+color: #d93248; 
+    color: #d93248; 
+}
 
 table.table6 {
   border-collapse: collapse;
