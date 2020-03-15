@@ -147,7 +147,6 @@ table.table5 {
 table.table5 td {
   padding: 1em;
   background: #857575;
-  color: #ffffff; 
   font-size: 0.8rem;
   font-weight: 500;
 }
@@ -160,8 +159,8 @@ table.table5 th {
 }
 
 table.table5 tr:nth-child(2) {
-color: #d93248; 
-    color: #d93248; 
+color: #f2990a; 
+
 }
 
 table.table6 {
