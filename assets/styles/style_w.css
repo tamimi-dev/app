@@ -3276,7 +3276,7 @@ iframe {
 }
 .medium-zoom-image--opened {
   border-radius: 1px;
-  height: 100%;
+ /* height: 100%;*/
 }
 
 
