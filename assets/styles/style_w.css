@@ -3272,7 +3272,7 @@ iframe {
 
 .medium-zoom-image {
   cursor: pointer !important;
-  z-index: 1104;
+ /* z-index: 1104; */
 }
 .medium-zoom-image--opened {
   border-radius: 1px;
