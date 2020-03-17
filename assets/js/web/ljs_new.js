@@ -10,7 +10,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
         var loc = data.feed.entry[i]['gsx$location']['$t'];
 		var desc = data.feed.entry[i]['gsx$description']['$t'];
 
-                document.getElementById('timel').innerHTML += ('<ul class="timeline"><li class="event" data-date="'+date+' '+time+'"><h3>'+cose+'</h3><span class="badge badge-pill badge-danger">'+loc+'</span><p>'+desc+'</p></li></ul>');
+                document.getElementById('timel').innerHTML += ('<li class="event" data-date="'+date+' '+time+'"><h3>'+cose+'</h3><span class="badge badge-pill badge-danger">'+loc+'</span><p>'+desc+'</p></li>');
       }
     });
 
