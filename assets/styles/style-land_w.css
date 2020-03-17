@@ -477,16 +477,6 @@ ol.list-ordered li::before {
 	}
 }
 
-body:after {
-	content: '';
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 998;
-	background: #fff;
-	width: 100%;
-	height: 100%
-}
 
 
 
@@ -501,7 +491,9 @@ body:after {
 
 
 
-
+.bg-white-content a:not([class*=' button']):not([class^=button]):focus,.bg-white-content a:not([class*=' button']):not([class^=button]):hover,div[class*=' bg-white'] a:not([class*=' button']):not([class^=button]):focus,div[class*=' bg-white'] a:not([class*=' button']):not([class^=button]):hover,div[class^=bg-white] a:not([class*=' button']):not([class^=button]):focus,div[class^=bg-white] a:not([class*=' button']):not([class^=button]):hover {
+	color: #141414
+}
 
 .bg-dark-content,div[class*=' bg-black'],div[class*=' bg-dark'],div[class^=bg-black],div[class^=bg-dark] {
 	color: rgba(255,255,255,.7)
