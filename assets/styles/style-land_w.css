@@ -276,15 +276,252 @@
 
 
 
+.modal .modal-content {
+	-webkit-box-shadow: 0 4px 30px -4px rgba(0,0,0,.3);
+	box-shadow: 0 4px 30px -4px rgba(0,0,0,.3);
+	border: 0
+}
+
+.modal .modal-content .modal-header {
+	border-bottom: 1px solid rgba(0,0,0,.15)
+}
+
+.modal .modal-content .modal-footer {
+	border-top: 1px solid rgba(0,0,0,.15)
+}
+
+
+
+
+.bg-image.bg-image-gradient:before {
+	content: '';
+	position: absolute;
+	background-image: linear-gradient(to top,#fff,rgba(255,255,255,.1));
+	width: 100%;
+	height: 100%
+}
+
+
+
+.blockquote.blockquote-style-4:before {
+	content: '\f10d';
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: rgba(0,0,0,.1);
+	font-family: "Font Awesome 5 Free";
+	font-size: 24px;
+	font-weight: 900
+}
+
+
+.required:after {
+	content: '*';
+	padding-left: 3px
+}
+
+ul.list-dash li:before {
+	content: '-';
+	padding-right: 7px
+}
 
 
 
 
 
+ol.list-ordered li::before {
+	content: counter(custom-counter)
+}
+
+
+
+.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a .home-portfolio-carousel-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,.1);
+	-webkit-transition: ease-out .2s;
+	transition: ease-out .2s
+}
+
+
+.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a .home-portfolio-carousel-content div {
+	position: absolute;
+	top: 30px;
+	left: 30px
+}
+
+
+.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a .home-portfolio-carousel-content div h1,.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a .home-portfolio-carousel-content div h2,.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a .home-portfolio-carousel-content div h3,.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a .home-portfolio-carousel-content div h4,.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a .home-portfolio-carousel-content div h5,.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a .home-portfolio-carousel-content div h6 {
+	margin-bottom: 5px;
+	color: #fff
+}
+
+
+
+.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a .home-portfolio-carousel-content div span {
+	display: inline-block;
+	margin-bottom: 5px
+}
+
+
+
+.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a .home-portfolio-carousel-content i {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+	opacity: 0;
+	color: #fff;
+	font-size: 20px;
+	-webkit-transition: ease-out .2s;
+	transition: ease-out .2s
+}
+
+.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a:hover .home-portfolio-carousel-content {
+	background: rgba(0,0,0,.2)
+}
+
+
+.home-portfolio-carousel-wrapper .home-portfolio-carousel-item a:hover .home-portfolio-carousel-content i {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1
+}
+
+
+.parallax-portfolio-item a .parallax-portfolio-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.1);
+	width: 100%;
+	height: 100%;
+	color: rgba(255,255,255,.7);
+	-webkit-transition: ease-out .2s;
+	transition: ease-out .2s
+}
+
+
+
+.parallax-portfolio-item a .parallax-portfolio-content div {
+	position: absolute;
+	top: 50px;
+	left: 50px
+}
+
+
+.parallax-portfolio-item a .parallax-portfolio-content div h1,.parallax-portfolio-item a .parallax-portfolio-content div h2,.parallax-portfolio-item a .parallax-portfolio-content div h3,.parallax-portfolio-item a .parallax-portfolio-content div h4,.parallax-portfolio-item a .parallax-portfolio-content div h5,.parallax-portfolio-item a .parallax-portfolio-content div h6 {
+	margin-bottom: 5px;
+	color: #fff
+}
+
+
+
+.parallax-portfolio-item a .parallax-portfolio-content div span {
+	display: inline-block;
+	margin-bottom: 5px
+}
+
+.parallax-portfolio-item a .parallax-portfolio-content i {
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+	opacity: 0;
+	color: #fff;
+	font-size: 20px;
+	-webkit-transition: ease-out .2s;
+	transition: ease-out .2s
+}
+
+.parallax-portfolio-item a:hover .parallax-portfolio-content {
+	background: rgba(0,0,0,.3)
+}
+
+.parallax-portfolio-item a:hover .parallax-portfolio-content i {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1
+}
+
+@media (max-width:768px) {
+	.parallax-portfolio-item {
+		height: 400px
+	}
+
+	.parallax-portfolio-item a .parallax-portfolio-content div {
+		top: 40px;
+		left: 40px
+	}
+
+	.parallax-portfolio-item a .parallax-portfolio-content i {
+		right: 40px;
+		bottom: 40px
+	}
+}
+
+@media (max-width:576px) {
+	.parallax-portfolio-item a .parallax-portfolio-content div {
+		top: 30px;
+		left: 30px
+	}
+
+	.parallax-portfolio-item a .parallax-portfolio-content i {
+		right: 30px;
+		bottom: 30px
+	}
+}
+
+body:after {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 998;
+	background: #fff;
+	width: 100%;
+	height: 100%
+}
 
 
 
 
+.bg-white-content,div[class*=' bg-black'] div[class*=' bg-white'],div[class*=' bg-black'] div[class^=bg-white],div[class*=' bg-dark'] div[class*=' bg-white'],div[class*=' bg-dark'] div[class^=bg-white],div[class*=' bg-white'],div[class^=bg-black] div[class*=' bg-white'],div[class^=bg-black] div[class^=bg-white],div[class^=bg-dark] div[class*=' bg-white'],div[class^=bg-dark] div[class^=bg-white],div[class^=bg-white] {
+	color: #7c7c7c
+}
+
+.bg-white-content h1,.bg-white-content h2,.bg-white-content h3,.bg-white-content h4,.bg-white-content h5,.bg-white-content h6,div[class*=' bg-black'] div[class*=' bg-white'] h1,div[class*=' bg-black'] div[class*=' bg-white'] h2,div[class*=' bg-black'] div[class*=' bg-white'] h3,div[class*=' bg-black'] div[class*=' bg-white'] h4,div[class*=' bg-black'] div[class*=' bg-white'] h5,div[class*=' bg-black'] div[class*=' bg-white'] h6,div[class*=' bg-black'] div[class^=bg-white] h1,div[class*=' bg-black'] div[class^=bg-white] h2,div[class*=' bg-black'] div[class^=bg-white] h3,div[class*=' bg-black'] div[class^=bg-white] h4,div[class*=' bg-black'] div[class^=bg-white] h5,div[class*=' bg-black'] div[class^=bg-white] h6,div[class*=' bg-dark'] div[class*=' bg-white'] h1,div[class*=' bg-dark'] div[class*=' bg-white'] h2,div[class*=' bg-dark'] div[class*=' bg-white'] h3,div[class*=' bg-dark'] div[class*=' bg-white'] h4,div[class*=' bg-dark'] div[class*=' bg-white'] h5,div[class*=' bg-dark'] div[class*=' bg-white'] h6,div[class*=' bg-dark'] div[class^=bg-white] h1,div[class*=' bg-dark'] div[class^=bg-white] h2,div[class*=' bg-dark'] div[class^=bg-white] h3,div[class*=' bg-dark'] div[class^=bg-white] h4,div[class*=' bg-dark'] div[class^=bg-white] h5,div[class*=' bg-dark'] div[class^=bg-white] h6,div[class*=' bg-white'] h1,div[class*=' bg-white'] h2,div[class*=' bg-white'] h3,div[class*=' bg-white'] h4,div[class*=' bg-white'] h5,div[class*=' bg-white'] h6,div[class^=bg-black] div[class*=' bg-white'] h1,div[class^=bg-black] div[class*=' bg-white'] h2,div[class^=bg-black] div[class*=' bg-white'] h3,div[class^=bg-black] div[class*=' bg-white'] h4,div[class^=bg-black] div[class*=' bg-white'] h5,div[class^=bg-black] div[class*=' bg-white'] h6,div[class^=bg-black] div[class^=bg-white] h1,div[class^=bg-black] div[class^=bg-white] h2,div[class^=bg-black] div[class^=bg-white] h3,div[class^=bg-black] div[class^=bg-white] h4,div[class^=bg-black] div[class^=bg-white] h5,div[class^=bg-black] div[class^=bg-white] h6,div[class^=bg-dark] div[class*=' bg-white'] h1,div[class^=bg-dark] div[class*=' bg-white'] h2,div[class^=bg-dark] div[class*=' bg-white'] h3,div[class^=bg-dark] div[class*=' bg-white'] h4,div[class^=bg-dark] div[class*=' bg-white'] h5,div[class^=bg-dark] div[class*=' bg-white'] h6,div[class^=bg-dark] div[class^=bg-white] h1,div[class^=bg-dark] div[class^=bg-white] h2,div[class^=bg-dark] div[class^=bg-white] h3,div[class^=bg-dark] div[class^=bg-white] h4,div[class^=bg-dark] div[class^=bg-white] h5,div[class^=bg-dark] div[class^=bg-white] h6,div[class^=bg-white] h1,div[class^=bg-white] h2,div[class^=bg-white] h3,div[class^=bg-white] h4,div[class^=bg-white] h5,div[class^=bg-white] h6 {
+	color: #141414
+}
+
+.bg-white-content a:not([class*=' button']):not([class^=button]),div[class*=' bg-white'] a:not([class*=' button']):not([class^=button]),div[class^=bg-white] a:not([class*=' button']):not([class^=button]) {
+	color: #7c7c7c
+}
+
+.bg-white-content a:not([class*=' button']):not([class^=button]):focus,.bg-white-content a:not([class*=' button']):not([class^=button]):hover,div[class*=' bg-white'] a:not([class*=' button']):not([class^=button]):focus,div[class*=' bg-white'] a:not([class*=' button']):not([class^=button]):hover,div[class^=bg-white] a:not([class*=' button']):not([class^=button]):focus,div[class^=bg-white] a:not([class*=' button']):not([class^=button]):hover {
+	color: #141414
+}
+
+.bg-dark-content,div[class*=' bg-black'],div[class*=' bg-dark'],div[class^=bg-black],div[class^=bg-dark] {
+	color: rgba(255,255,255,.7)
+}
+
+.bg-dark-content h1,.bg-dark-content h2,.bg-dark-content h3,.bg-dark-content h4,.bg-dark-content h5,.bg-dark-content h6,div[class*=' bg-black'] h1,div[class*=' bg-black'] h2,div[class*=' bg-black'] h3,div[class*=' bg-black'] h4,div[class*=' bg-black'] h5,div[class*=' bg-black'] h6,div[class*=' bg-dark'] h1,div[class*=' bg-dark'] h2,div[class*=' bg-dark'] h3,div[class*=' bg-dark'] h4,div[class*=' bg-dark'] h5,div[class*=' bg-dark'] h6,div[class^=bg-black] h1,div[class^=bg-black] h2,div[class^=bg-black] h3,div[class^=bg-black] h4,div[class^=bg-black] h5,div[class^=bg-black] h6,div[class^=bg-dark] h1,div[class^=bg-dark] h2,div[class^=bg-dark] h3,div[class^=bg-dark] h4,div[class^=bg-dark] h5,div[class^=bg-dark] h6 {
+	color: #fff
+}
+
+.bg-dark-content a:not([class*=' button']):not([class^=button]),div[class*=' bg-black'] a:not([class*=' button']):not([class^=button]),div[class*=' bg-dark'] a:not([class*=' button']):not([class^=button]),div[class^=bg-black] a:not([class*=' button']):not([class^=button]),div[class^=bg-dark] a:not([class*=' button']):not([class^=button]) {
+	color: rgba(255,255,255,.8)
+}
+
+.bg-dark-content a:not([class*=' button']):not([class^=button]):focus,.bg-dark-content a:not([class*=' button']):not([class^=button]):hover,div[class*=' bg-black'] a:not([class*=' button']):not([class^=button]):focus,div[class*=' bg-black'] a:not([class*=' button']):not([class^=button]):hover,div[class*=' bg-dark'] a:not([class*=' button']):not([class^=button]):focus,div[class*=' bg-dark'] a:not([class*=' button']):not([class^=button]):hover,div[class^=bg-black] a:not([class*=' button']):not([class^=button]):focus,div[class^=bg-black] a:not([class*=' button']):not([class^=button]):hover,div[class^=bg-dark] a:not([class*=' button']):not([class^=button]):focus,div[class^=bg-dark] a:not([class*=' button']):not([class^=button]):hover {
+	color: #fff
+}
 
 
 
