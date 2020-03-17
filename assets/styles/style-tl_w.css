@@ -91,13 +91,15 @@ h11 {
   top: 0;
 }
 .timeline .event:before {
-  left: -217.5px;
+  left: -150.5px;
   color: rgba(255, 255, 255, 0.4);
   content: attr(data-date);
-  text-align: right;
+    transform-origin: 1 0;
+  transform: rotate(270deg);
+  text-align: left;
   font-weight: 100;
   font-size: 0.9em;
-  min-width: 120px;
+  min-width: 10px;
   font-family: 'Saira', sans-serif;
 }
 .timeline .event:after {
