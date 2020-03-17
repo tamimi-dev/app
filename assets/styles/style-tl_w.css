@@ -24,7 +24,7 @@ a {
 }
 a:hover {
   color: #ffffff;
-  background: #004ffc;
+  background: #fc0000;
   border-bottom: .35em solid black;
 }
 strong {
@@ -43,7 +43,7 @@ h1 {
 }
 /* Timeline */
 .timeline {
-  border-left: 4px solid #004ffc;
+  border-left: 4px solid #fc0000;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   background: rgba(255, 255, 255, 0.03);
@@ -101,7 +101,7 @@ h1 {
   font-family: 'Saira', sans-serif;
 }
 .timeline .event:after {
-  box-shadow: 0 0 0 4px #004ffc;
+  box-shadow: 0 0 0 4px #fc0000;
   left: -57.85px;
   background: #313534;
   border-radius: 50%;
