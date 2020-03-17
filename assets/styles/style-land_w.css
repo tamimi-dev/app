@@ -10418,7 +10418,7 @@ p.large {
 }
 .item-preview .item-preview-description {
  font-size:.8rem;
- color:rgba(33,37,41,.7)
+/* color:rgba(33,37,41,.7) */
 }
 .item-preview .item-preview-framework-badges {
  position:absolute;
