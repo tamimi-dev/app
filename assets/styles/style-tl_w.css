@@ -3,7 +3,7 @@
 /* Variables */
 /* Base */
 body {
-  background: #252827;
+
   font-size: 16px;
 }
 p {
@@ -24,7 +24,7 @@ a {
 }
 a:hover {
   color: #ffffff;
-  background: #fc0000;
+
   border-bottom: .35em solid black;
 }
 strong {
@@ -58,7 +58,7 @@ h1 {
   list-style: none;
   text-align: left;
   font-weight: 100;
-  max-width: 55%;
+  max-width: 40%;
 }
 .timeline h1 {
   font-family: 'Saira', sans-serif;
