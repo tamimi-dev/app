@@ -871,7 +871,7 @@ select option,
   transition: .4s ease-in-out;
   white-space: nowrap;
   margin:auto;
-  display:block;
+ /* display:block; */
 }
 .btn:hover {
   color: #fff;
