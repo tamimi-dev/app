@@ -10,7 +10,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
 
   });
   new Chart(document.getElementById('canvas'), {
-    type: 'horizontalBar',
+   // type: 'horizontalBar',
     data: {
       labels: labels,
       datasets: [{
