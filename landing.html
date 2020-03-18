@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>COVID19 Tracker Dashboard</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="author" content="Tamimi">
+    <meta name="description" content="Coronavirus Tracker world wide covid19">
+	
+	  <!-- Twitter data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="coronatrackers.com">
+    <meta name="twitter:title" content="Coronavirus trackers">
+    <meta name="twitter:description" content="Coronavirus COVID19 tracker platform">
+    <meta name="twitter:image" content="../assets/img/twit_banner.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Coronavirus trackers">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="coronatrackers.com">
+    <meta property="og:image" content="../assets/img/twit_banner.png">
+    <meta property="og:description" content="Coronavirus COVID19 trackers">
+    <meta property="og:site_name" content="Coronavirus trackers">
+	
+<!-- Favicons  -->
+<link rel="apple-touch-icon" sizes="57x57" href="../assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="../assets/favicons/manifest.json">
+
+
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style_w.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/style-dark_w.css">
+
+
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="coronatrackers" data-description="Support the service" data-message="Thank you for your support!" data-color="#FF5F5F" data-position="right" data-x_margin="15" data-y_margin="15"></script>	
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MKLRG3V');</script>
+<!-- End Google Tag Manager -->
+	
+</head>
+<body class="bg-triangles">
+	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKLRG3V"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+       
+    <!-- Preload -->
+
+
+    <main class="main">
+	    <div class="col-12 col-sm-12 col-md-12 col-xl-12 container gutter-top">
+                  				 
+                          <div  class="text-center">
+    <h6> <small>LAST UPDATE (GMT): </small></h6> 
+    <h6 id="update" class="clock"></h6>  
+    </div>          
+                    
+
+
+		    
+
+						</div>						
+	
+	
+	
+	
+			        <div class="col-12 col-sm-12 col-md-12 col-xl-12 ">
+				    <div class="box shadow pb-0">
+
+
+						<!-- Gallery -->
+						<div class="pb-0">
+							<!-- Filter -->
+                            <div class="select">
+			                    <span class="placeholder">Select category</span>
+			                    <ul class="filter">
+			                        <li class="filter__item">Category</li>
+				                    <li class="filter__item active" data-filter="*"><a class="filter__link active" href="#filter">All</a></li>
+				                    <li class="filter__item" data-filter=".category-Main"><a class="filter__link" href="#filter">Main</a></li>
+				                    <li class="filter__item" data-filter=".category-Statistics"><a class="filter__link" href="#filter">Statistics</a></li>
+				                    <li class="filter__item" data-filter=".category-Maps"><a class="filter__link" href="#filter">Maps</a></li>
+									          <li class="filter__item" data-filter=".category-News"><a class="filter__link" href="#filter">News</a></li>
+									 <li class="filter__item" data-filter=".category-Dashboard"><a class="filter__link" href="#filter">Dashboard</a></li>
+			                    </ul>
+			                    <input type="hidden" name="changemetoo">
+		                    </div>
+
+							<!-- Content -->
+							<div class="gallery-grid js-masonry js-filter-container">
+							    <div class="gutter-sizer"></div>
+							    <!-- Item 1 -->
+							    <figure class="gallery-grid__item category-Main">
+								    <div class="gallery-grid__image-wrap">
+                                     <a href="../hl.html">
+									 <img class="gallery-grid__image cover lazyload" src="../assets/img/land/HL.png" data-zoom="" alt="">
+									 </a>
+									</div>
+                                    <figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">High Level Statistics</h4>
+										<span class="gallery-grid__category">Main</span>
+									</figcaption>
+                                </figure>
+
+								<!-- Item 1 -->
+							    <figure class="gallery-grid__item category-Main">
+								    <div class="gallery-grid__image-wrap">
+													   <a href="../android.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/app.png" data-zoom="" alt="">
+					      </a>
+									</div>
+                                    <figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">Android App</h4>
+										<span class="gallery-grid__category">Main</span>
+									</figcaption>
+                                </figure>
+
+							    <!-- Item 2 -->
+							    <figure class="gallery-grid__item category-Main">
+								    <div class="gallery-grid__image-wrap">
+									     <a href="../tl.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/timeline.png" data-zoom="" alt="">
+									 </a>
+																		 </div>	
+                                    <figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">TimeLine</h4>
+										<span class="gallery-grid__category">Main</span>
+									</figcaption>
+                                </figure>
+
+							    <!-- Item 3 -->
+							    <figure class="gallery-grid__item category-Statistics">
+								    <div class="gallery-grid__image-wrap">
+													  <a href="../pc.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/stats.png" data-zoom="" alt="">
+									 </a>
+										     </div>	
+                                    <figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">Per Country Statistics</h4>
+										<span class="gallery-grid__category">Statistics</span>
+									</figcaption>
+                                </figure>
+
+							    <!-- Item 4 -->
+							    <figure class="gallery-grid__item category-Maps">
+								    <div class="gallery-grid__image-wrap">
+									     <a href="../world.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/worldmap.png" data-zoom="" alt="">
+								 </a>
+																		 </div>
+									<figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">World Map and Statistics</h4>
+										<span class="gallery-grid__category">Maps</span>
+									</figcaption>
+                                </figure>
+
+							    <!-- Item 5 -->
+							    <figure class="gallery-grid__item category-Maps">
+								    <div class="gallery-grid__image-wrap">
+													  <a href="../china.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/china.png" data-zoom="" alt="">
+									 </a>
+										     </div>
+									<figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">China Map and Statistics</h4>
+										<span class="gallery-grid__category">Maps</span>
+									</figcaption>
+                                </figure>
+
+							    <!-- Item 6 -->
+							    <figure class="gallery-grid__item category-Maps">
+								    <div class="gallery-grid__image-wrap">
+									     <a href="../canada.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/canada.png" data-zoom="" alt="">
+									 </a>
+																	       </div>
+									<figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">Canada Map and Statistics</h4>
+										<span class="gallery-grid__category">Maps</span>
+									</figcaption>
+                                </figure>
+
+							    <!-- Item 7 -->
+							    <figure class="gallery-grid__item category-Maps">
+								    <div class="gallery-grid__image-wrap">
+													  <a href="../us.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/us.png" data-zoom="" alt="">
+									 </a>
+										     </div>
+									<figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">US Map and Statistics</h4>
+										<span class="gallery-grid__category">Maps</span>
+									</figcaption>
+                                </figure>
+
+							    <!-- Item 8 -->
+							    <figure class="gallery-grid__item category-Maps">
+								    <div class="gallery-grid__image-wrap">
+									     <a href="../australia.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/au.png" data-zoom="" alt="">
+									 </a>
+																	   </div>
+									<figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">Australia Map and Statistics</h4>
+										<span class="gallery-grid__category">Maps</span>
+									</figcaption>
+                                </figure>
+
+							    <!-- Item 9 -->
+							    <figure class="gallery-grid__item category-Maps">
+								    <div class="gallery-grid__image-wrap">
+													  <a href="../skorea.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/korea.png" data-zoom="" alt="">
+								 </a>
+										     </div>
+									<figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">South Korea Map and Statistics</h4>
+										<span class="gallery-grid__category">Maps</span>
+									</figcaption>
+                                </figure>
+							
+							<!-- Item 10 -->
+							    <figure class="gallery-grid__item category-Maps">
+								    <div class="gallery-grid__image-wrap">
+									     <a href="../japan.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/japan.png" data-zoom="" alt="">
+									 </a>
+																	      </div>
+									<figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">Japan Map and Statistics</h4>
+										<span class="gallery-grid__category">Maps</span>
+									</figcaption>
+                                </figure>
+							
+							
+							<!-- Item 11 -->
+							    <figure class="gallery-grid__item category-Maps">
+								    <div class="gallery-grid__image-wrap">
+													  <a href="../italy.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/italy.png" data-zoom="" alt="">
+								 </a>
+										     </div>
+									<figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">Italy Map and Statistics</h4>
+										<span class="gallery-grid__category">Maps</span>
+									</figcaption>
+                                </figure>
+					
+												
+														<!-- Item 12 -->
+							    <figure class="gallery-grid__item category-News">
+								    <div class="gallery-grid__image-wrap">
+									     <a href="../notices.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/notice.png" data-zoom="" alt="">
+									 </a>
+																	       </div>
+									<figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">Notices and Travel restrictions</h4>
+										<span class="gallery-grid__category">News</span>
+									</figcaption>
+                                </figure>
+
+					<!-- Item 13 -->
+							    <figure class="gallery-grid__item category-Dashboard">
+								    <div class="gallery-grid__image-wrap">
+													  <a href="../dashboard.html">
+                                        <img class="gallery-grid__image cover lazyload" src="../assets/img/land/dashboard.png" data-zoom="" alt="">
+									 </a>
+										     </div>
+									<figcaption class="gallery-grid__caption">
+									    <h4 class="title gallery-grid__title">Full dashboard (one page) - Open only in desktop, use the App for your phone</h4>
+										<span class="gallery-grid__category">Dashboard</span>
+									</figcaption>
+                                </figure>
+
+							</div>
+						</div>
+					</div>
+					
+					<!-- Footer -->
+					<footer class="footer">© 2020 coronatrackers.com</footer>
+		        </div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+						
+						
+					</div>
+					
+		        
+				</div>
+	
+    </main>
+
+
+
+	<!-- JavaScripts -->
+	<script src="../assets/js/web/jquery-3.4.1.min.js"></script>
+	<script src="../assets/js/web/plugins.js"></script>
+    <script src="../assets/js/web/common.js"></script>
+
+
+<script src="../assets/js/web/clck.js"></script> 
+
+</body>
+
+</html>

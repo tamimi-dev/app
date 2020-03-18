@@ -1,8 +1,38 @@
 
+
 @import url(bootstrap.min.css);
 @import url(swiper.min.css);
 @import url("https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap");
+
+/* Clock */
+
+@font-face {
+    font-family: 'ticking_timebomb_bbregular';
+    src: url('fonts/clock-webfont.woff') format('woff2'),
+         url('fonts/clock-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clock {
+ font-size:1.5rem;
+ font-family:ticking_timebomb_bbregular,serif;
+ margin-bottom:.9rem;
+ position:relative;
+}
+
+
+
+
+
+
+#chartdiv_m {
+  width: 100%;
+  height: 500px;
+max-width:100%;
+
+}
 
 #chartdiv {
   width: 100%;
@@ -117,8 +147,7 @@ table.table5 {
 table.table5 td {
   padding: 1em;
   background: #857575;
-  color: #ffffff; 
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -129,7 +158,15 @@ table.table5 th {
   font-weight: 200;
 }
 
+table.table5 tr:nth-child(3) td:nth-child(2){
+color: #a60600; 
 
+}
+
+table.table5 tr:nth-child(3) td:nth-child(1){
+color: #f2990a; 
+
+}
 
 table.table6 {
   border-collapse: collapse;
@@ -149,6 +186,30 @@ table.table6 td {
 table.table6 th {
   padding: 1em;
   background: #d67f29;
+  color: #ffffff; 
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+
+table.table_rate {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 0;
+}
+
+table.table_rate td {
+  padding: 1em;
+  background: #0056a7;
+  color: #ffffff; 
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+table.table_rate th {
+  padding: 1em;
+  background: #0056a7;
   color: #ffffff; 
   font-size: 1.5rem;
   font-weight: 800;
@@ -2349,7 +2410,7 @@ iframe {
 
 
 /* -----------------------------------------------------------------
-    - Portfolio
+  
 ----------------------------------------------------------------- */
 .gutter-sizer {
   width: 30px;
@@ -2531,7 +2592,7 @@ iframe {
   }
 }
 /* -----------------------------------------------------------------
-    - News
+  
 ----------------------------------------------------------------- */
 .news-grid {
   display: -webkit-flex;
@@ -3136,7 +3197,7 @@ iframe {
 }
 
 /* -----------------------------------------------------------------
-    - Contact
+    - Con
 ----------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
   .contact-form .btn {
@@ -3211,12 +3272,57 @@ iframe {
 
 .medium-zoom-image {
   cursor: pointer !important;
-  z-index: 1104;
+ /* z-index: 1104; */
 }
 .medium-zoom-image--opened {
   border-radius: 1px;
-  height: 100%;
+ /* height: 100%;*/
 }
+
+
+	
+	
+	/* style list for accom */
+	
+	.styled-list {
+  font-weight: 700;
+  line-height: 2.4em; }
+  .styled-list, .styled-list ul, .styled-list ol {
+    list-style: none; }
+  .styled-list li {
+    position: relative; }
+    .styled-list li:before {
+      content: "\f00c";
+      font-family: icomoon;
+      color: inherit;
+      top: 0;
+      left: -1.6em;
+      position: absolute; }
+	  
+	  
+	  
+	  @media (min-width: 768px) {
+  .styled-list {
+    line-height: 1.1em; }
+    .styled-list, .styled-list ul, .styled-list ol {
+      padding-left: 2.7em; }
+    .styled-list li {
+      margin-bottom: 1.16em; }
+    .styled-list li:before {
+      left: -2.7em; }
+  .dl-horizontal dt {
+    float: left;
+    width: 100px;
+    overflow: hidden;
+    clear: left;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .dl-horizontal dd {
+    margin-left: 112px; } }
+	
+	
+	
+
 
 /*
 .progress1{
