@@ -145,17 +145,17 @@ table.table5 {
 }
 
 table.table5 td {
-  padding: 1em;
+ /* padding: 1em; */
   background: #857575;
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-weight: 500;
 }
 
 table.table5 th {
-  padding: 1em;
+  padding: 0.65em; 
   color: #d93248; 
-  font-size: 0.8rem;
-  font-weight: 200;
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
 table.table5 tr:nth-child(3) td:nth-child(2){
@@ -1772,7 +1772,7 @@ iframe {
 .avatar {
   display: block;
   height: 100%;
-  width: 100%;
+  width: 120%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1797,7 +1797,7 @@ iframe {
 }
 
 .avatar--120 {
-  max-height: 120px;
+  max-height: 40px;
   max-width: 120px;
   filter: drop-shadow(-2.5px 0 0 #fff) drop-shadow(3px 0 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 4px 4px rgba(134, 151, 168, 0.25)) drop-shadow(0 8px 8px rgba(134, 151, 168, 0.4));
 }
