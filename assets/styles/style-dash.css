@@ -1797,7 +1797,7 @@ iframe {
 }
 
 .avatar--120 {
-  max-height: 80px;
+  max-height: 100px;
   max-width: 120px;
   filter: drop-shadow(-2.5px 0 0 #fff) drop-shadow(3px 0 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 4px 4px rgba(134, 151, 168, 0.25)) drop-shadow(0 8px 8px rgba(134, 151, 168, 0.4));
 }
