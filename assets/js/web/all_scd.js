@@ -17,7 +17,7 @@ var cfr = data.feed.entry[i]['gsx$cfr']['$t'];
           var china = data.feed.entry[i]['gsx$china']['$t'];
 	      var nochina = data.feed.entry[i]['gsx$nochina']['$t'];
 
-        document.getElementById('susp').innerHTML += ('<tr>'+'<td>'+susp+'</td>'+'</tr>');
+     
 		document.getElementById('confir').innerHTML += ('<tr>'+'<td>'+confir+'</td>'+'</tr>');
 		document.getElementById('death').innerHTML += ('<tr>'+'<td>'+death+'</td>'+'</tr>');
 	      document.getElementById('recov').innerHTML += ('<tr>'+'<td>'+recov+'</td>'+'</tr>');
@@ -31,6 +31,7 @@ var cfr = data.feed.entry[i]['gsx$cfr']['$t'];
 	      document.getElementById('china').innerHTML += ('<tr>'+'<td>'+china+'</td>'+'</tr>');
 	      document.getElementById('nochina').innerHTML += ('<tr>'+'<td>'+nochina+'</td>'+'</tr>');
 
-
+   document.getElementById('susp').innerHTML += ('<tr>'+'<td>'+susp+'</td>'+'</tr>');
+	       document.getElementById('rt').innerHTML += ('<tr>'+'<td>'+rt+'</td>'+'</tr>');
       }
     });
