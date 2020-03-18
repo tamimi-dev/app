@@ -139,7 +139,7 @@ table.table4 th {
 
 table.table5 {
   border-collapse: collapse;
-  border-radius: 1em;
+  border-radius: 0.5em;
   overflow: hidden;
   border: 0;
 }
@@ -147,8 +147,8 @@ table.table5 {
 table.table5 td {
  /* padding: 1em; */
   background: #857575;
-  font-size: 0.5rem;
-  font-weight: 500;
+  font-size: 0.6rem;
+  font-weight: 200;
 }
 
 table.table5 th {
@@ -1797,7 +1797,7 @@ iframe {
 }
 
 .avatar--120 {
-  max-height: 40px;
+  max-height: 80px;
   max-width: 120px;
   filter: drop-shadow(-2.5px 0 0 #fff) drop-shadow(3px 0 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 4px 4px rgba(134, 151, 168, 0.25)) drop-shadow(0 8px 8px rgba(134, 151, 168, 0.4));
 }
