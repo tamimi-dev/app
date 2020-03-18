@@ -994,8 +994,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .title--h4 {
-  font-size: 1.25rem;
-  margin-bottom: .8rem;
+  font-size: 0.7rem;
+  margin-bottom: .1rem;
 }
 @media only screen and (max-width: 580px) {
   .title--h4 {
