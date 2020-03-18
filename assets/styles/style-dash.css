@@ -145,9 +145,9 @@ table.table5 {
 }
 
 table.table5 td {
- /* padding: 1em; */
+  padding: .3em; 
   background: #857575;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   font-weight: 200;
 }
 
