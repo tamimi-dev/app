@@ -3,8 +3,8 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
 
      var iran = [];
 
-
-
+  data.feed.entry.forEach(e => {
+    labels.push(e['gsx$timecase']['$t']);
           	iran.push(Number(e['gsx$iran']['$t']));
           
   });
