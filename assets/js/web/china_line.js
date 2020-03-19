@@ -37,7 +37,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
        //   dashArray: [0, 8, 5]
         },
         title: {
-          text: 'Cases by day (Exclude China)',
+          text: 'Cases by day',
           align: 'left'
         },
         legend: {
