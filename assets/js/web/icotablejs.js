@@ -14,11 +14,12 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
 
     document.getElementById('ico_cntry').innerHTML += ('<tr><td><svg class="avatar avatar--120">' + '<g class="avatar__box">' + '<image xlink:href="https://tamimi-dev.github.io/app/assets/icons/cntry/' + ico + '.svg"' + ' height="100%"' + 'width="100%"></image></g></svg></td><td>' + cntry + '</td><td>' + cntry_case + '</td><td>' + chc + '</td><td>' + dth + '</td><td>' + cdt + '</td></tr>');
   }
+
+
+
+});
   $(document).ready(function() {
     $('#globe').DataTable({
       responsive: true
     });
   });
-
-
-});
