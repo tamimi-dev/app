@@ -18,8 +18,4 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
 
 
 });
-  $(document).ready(function() {
-    $('#globe').DataTable({
-      responsive: true
-    });
-  });
+
