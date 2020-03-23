@@ -10,21 +10,21 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
 
   });
   new Chart(document.getElementById('canvas'), {
-  type: 'bar',
+  type: 'horizontalBar',
     data: {
       labels: labels,
       datasets: [{
         label: 'Total Cases (Accumulated)',
         data: numbers,
-        backgroundColor: 'rgb(253, 48, 76)',
+        backgroundColor: 'rgb(249, 160, 63)',
         borderColor: 'rgb(253, 48, 76)',
         pointBackgroundColor: 'rgb(240,236,211)'
       },
 {
         label: 'Daily Increase',
         data: numbers2,
-        backgroundColor: 'rgb(255, 159, 64)',
-        borderColor: 'rgb(255, 159, 64)',
+        backgroundColor: 'rgb(91, 192, 235)',
+        borderColor: 'rgb(0, 101, 224)',
         pointBackgroundColor: 'rgb(240,236,211)'
       }
 	  ]
