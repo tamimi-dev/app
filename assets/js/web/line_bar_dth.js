@@ -11,7 +11,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
   
 var options1 = {
   chart: {
-    id: "chart3",
+    id: "chart2",
     type: "area",
     height: 230,
     foreColor: "#ccc",
@@ -64,9 +64,9 @@ var options1 = {
   }
 };
 
-var chart4 = new ApexCharts(document.querySelector("#chart-area_dth"), options1);
+var chart1 = new ApexCharts(document.querySelector("#chart-area_dth"), options1);
 
-chart4.render();
+chart1.render();
 
 var options2 = {
   chart: {
@@ -113,7 +113,8 @@ var options2 = {
   }
 };
 
-var chart3 = new ApexCharts(document.querySelector("#chart-bar_dth"), options2);
+var chart2 = new ApexCharts(document.querySelector("#chart-bar_dth"), options2);
 
-chart3.render();
+chart2.render();
 });
+
