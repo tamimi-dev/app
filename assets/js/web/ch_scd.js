@@ -11,7 +11,7 @@ var ch_crit = data.feed.entry[i]['gsx$chcrit']['$t'];
      var ch_rcv = data.feed.entry[i]['gsx$usrcv']['$t'];
 	      var ch_cfr = data.feed.entry[i]['gsx$uscfr']['$t'];
      
-		document.getElementById('ch_cse').innerHTML += ('<tr>'+'<td>'+ch_cse'</td>'+'</tr>');
+		document.getElementById('ch_cse').innerHTML += ('<tr>'+'<td>'+ch_cse+'</td>'+'</tr>');
 		document.getElementById('ch_dth').innerHTML += ('<tr>'+'<td>'+ch_dth+'</td>'+'</tr>');
 	  document.getElementById('ch_crit').innerHTML += ('<tr>'+'<td>'+ch_crit+'</td>'+'</tr>');
 	  document.getElementById('ch_rcv').innerHTML += ('<tr>'+'<td>'+ch_rcv+'</td>'+'</tr>');
