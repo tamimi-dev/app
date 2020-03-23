@@ -9,7 +9,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
 		var ch_dth = data.feed.entry[i]['gsx$chdth']['$t'];
 var ch_crit = data.feed.entry[i]['gsx$chcrit']['$t'];
      var ch_rcv = data.feed.entry[i]['gsx$chrcv']['$t'];
-	      var ch_cfr = data.feed.entry[i]['gsx$uscfr']['$t'];
+	      var ch_cfr = data.feed.entry[i]['gsx$chcfr']['$t'];
 
 
 
