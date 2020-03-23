@@ -5,20 +5,17 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
       var i;
       for (i = 0; i < sheetData.length; i++) {
 
-        var ca_cse  = data.feed.entry[i]['gsx$cacase']['$t'];
-		var ca_dth = data.feed.entry[i]['gsx$cadth']['$t'];
-var ca_crit = data.feed.entry[i]['gsx$cacrit']['$t'];
-     var ca_rcv = data.feed.entry[i]['gsx$carcv']['$t'];
-	      var ca_cfr = data.feed.entry[i]['gsx$cacfr']['$t'];
+        var can_cse = data.feed.entry[i]['gsx$cacase']['$t'];
+		var can_dth = data.feed.entry[i]['gsx$cadth']['$t'];
+var can_crit = data.feed.entry[i]['gsx$cacrit']['$t'];
+     var can_rcv = data.feed.entry[i]['gsx$carcv']['$t'];
+	      var can_cfr = data.feed.entry[i]['gsx$cacfr']['$t'];
 
-
-
-     
-		document.getElementById('ca_cse ').innerHTML += ('<tr>'+'<td>'+ca_cse +'</td>'+'</tr>');
-		document.getElementById('ca_dth').innerHTML += ('<tr>'+'<td>'+ca_dth+'</td>'+'</tr>');
-	  document.getElementById('ca_crit').innerHTML += ('<tr>'+'<td>'+ca_crit+'</td>'+'</tr>');
-	  document.getElementById('ca_rcv').innerHTML += ('<tr>'+'<td>'+ca_rcv+'</td>'+'</tr>');
-    	document.getElementById('ca_cfr').innerHTML += ('<tr>'+'<td>'+ca_cfr+'</td>'+'</tr>');
+		document.getElementById('can_cse').innerHTML += ('<tr>'+'<td>'+can_cse+'</td>'+'</tr>');
+		document.getElementById('can_dth').innerHTML += ('<tr>'+'<td>'+can_dth+'</td>'+'</tr>');
+	  document.getElementById('can_crit').innerHTML += ('<tr>'+'<td>'+can_crit+'</td>'+'</tr>');
+	  document.getElementById('can_rcv').innerHTML += ('<tr>'+'<td>'+can_rcv+'</td>'+'</tr>');
+    	document.getElementById('can_cfr').innerHTML += ('<tr>'+'<td>'+can_cfr+'</td>'+'</tr>');
 	     
       }
     });
