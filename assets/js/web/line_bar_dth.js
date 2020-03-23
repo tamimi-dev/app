@@ -1,4 +1,3 @@
-
 $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/ok01ra6/public/values?alt=json", data => {
   var labels_chdth = [];
   var numbers_chdth = [];
@@ -9,9 +8,9 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
 	numbers2_chdth.push(Number(e['gsx$totdthall']['$t']));
   }); 
   
-var options1 = {
+var options1_dth = {
   chart: {
-    id: "chart2",
+    id: "chart2_dth",
     type: "area",
     height: 230,
     foreColor: "#ccc",
@@ -64,18 +63,18 @@ var options1 = {
   }
 };
 
-var chart1 = new ApexCharts(document.querySelector("#chart-area_dth"), options1);
+var chart1_dth = new ApexCharts(document.querySelector("#chart-area_dth"), options1_dth);
 
-chart1.render();
+chart1_dth.render();
 
-var options2 = {
+var options2_dth = {
   chart: {
-    id: "chart1",
+    id: "chart1_dth",
     height: 130,
     type: "bar",
     foreColor: "#ccc",
     brush: {
-      target: "chart2",
+      target: "chart2_dth",
       enabled: true
     },
     selection: {
@@ -113,8 +112,7 @@ var options2 = {
   }
 };
 
-var chart2 = new ApexCharts(document.querySelector("#chart-bar_dth"), options2);
+var chart2_dth = new ApexCharts(document.querySelector("#chart-bar_dth"), options2_dth);
 
-chart2.render();
+chart2_dth.render();
 });
-
