@@ -64,7 +64,7 @@ var options1 = {
   }
 };
 
-var chart1 = new ApexCharts(document.querySelector("#chart-area"), options1);
+var chart1 = new ApexCharts(document.querySelector("#chart-area_dth"), options1);
 
 chart1.render();
 
@@ -113,7 +113,7 @@ var options2 = {
   }
 };
 
-var chart2 = new ApexCharts(document.querySelector("#chart-bar"), options2);
+var chart2 = new ApexCharts(document.querySelector("#chart-bar_dth"), options2);
 
 chart2.render();
 });
