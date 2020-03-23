@@ -24,7 +24,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
 {
         label: 'Daily Deaths Increase',
         data: numbers2_d,
-        backgroundColor: 'rgb(201, 175, 199)',
+        backgroundColor: 'rgb(91, 192, 235)',
         borderColor: 'rgb(255, 159, 64)',
         pointBackgroundColor: 'rgb(240,236,211)'
       }
