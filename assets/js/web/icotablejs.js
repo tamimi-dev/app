@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     "aoColumns": [{
        "autoWidth": true,
-       width: "40%",
+       width: "30%",
         "mDataProp": "gsx$ico.$t"
       },
       {
