@@ -42,19 +42,22 @@ $(document).ready(function() {
         "mDataProp": "gsx$country.$t"
       },
       {
-        "mDataProp": "gsx$cases.$t"
+       "className": "dt_case",
+       "mDataProp": "gsx$cases.$t"
       },
       {
+      "className": "dt_chc",
         "mDataProp": "gsx$chcases.$t"
       },
       {
+      "className": "dt_dth",
         "mDataProp": "gsx$deaths.$t"
       },
       {
+        "className": "dt_cdth",
         "mDataProp": "gsx$chdeaths.$t"
       }
     ]
   });
 });
-
 
