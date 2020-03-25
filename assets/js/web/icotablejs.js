@@ -56,6 +56,14 @@ $(document).ready(function() {
       {
         "className": "dt_cdth",
         "mDataProp": "gsx$chdeaths.$t"
+      },
+      {
+        "className": "dt_recov",
+        "mDataProp": "gsx$recovdt.$t"
+      },
+      {
+        "className": "dt_ser",
+        "mDataProp": "gsx$serdt.$t"
       }
     ]
   });
