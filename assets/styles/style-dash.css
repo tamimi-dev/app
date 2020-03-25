@@ -31,6 +31,15 @@ table.dataTable tbody th, table.dataTable tbody td {
  
 }
 
+.dt_recov {
+  color: #00a700;
+ 
+}
+
+.dt_ser {
+  color: #c107ff;
+ 
+}
 
 
 
