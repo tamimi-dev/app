@@ -5,6 +5,40 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo:400,400i,500,500i,600,600i,700,700i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap");
 
+
+/* datatable */
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 8px 10px; /* e.g. change 8x to 4px here */
+}
+
+.dt_case {
+  color: #d67f29;
+ 
+}
+
+.dt_dth {
+  color: #fc3944;
+ 
+}
+
+.dt_chc {
+  color: #fab978;
+ 
+}
+
+.dt_cdth {
+  color: #ff969c;
+ 
+}
+
+
+
+
+
+
+
+
+
 /* Clock */
 
 @font-face {
