@@ -33,8 +33,8 @@ $(document).ready(function() {
     }],
 
     "aoColumns": [{
-       "autoWidth": false,
-       width: "50%",
+       "autoWidth": true,
+       width: "40%",
         "mDataProp": "gsx$ico.$t"
       },
       {
