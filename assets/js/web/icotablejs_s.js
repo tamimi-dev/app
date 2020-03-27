@@ -62,6 +62,14 @@ $(document).ready(function() {
       {
         "className": "dt_ser",
         "mDataProp": "gsx$serdt.$t"
+      },
+      {
+        "className": "dt_cfr",
+        "mDataProp": "gsx$cfrdt.$t"
+      },
+      {
+        "className": "dt_rec_rate",
+        "mDataProp": "gsx$recratedt.$t"
       }
     ]
   });
