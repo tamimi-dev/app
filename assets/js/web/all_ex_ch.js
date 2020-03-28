@@ -11,7 +11,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
      var iran = [];
    var germany = [];
     var switz = [];
-
+ var uk = [];
   data.feed.entry.forEach(e => {
     labels.push(e['gsx$timecase']['$t']);
     china.push(Number(e['gsx$china']['$t']));
@@ -25,6 +25,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
           	iran.push(Number(e['gsx$iran']['$t']));
             	germany.push(Number(e['gsx$germany']['$t']));
               	switz.push(Number(e['gsx$switzerland']['$t']));
+	  uk.push(Number(e['gsx$uk']['$t']));
 
   });
     
@@ -70,9 +71,13 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
           {
             name: "Switzerland",
             data: switz
+          },
+          {
+            name: "UK",
+            data: uk
           }
         ],
-          colors: ['#ffc107', '#d67f29', '#fd304c', '#00a700', '#c107ff', '#4B3AC5', '#3AC5C4', '#00C9A7', '#C34A36', '#FEFEDF'],
+          colors: ['#ffc107', '#d67f29', '#fd304c', '#00a700', '#c107ff', '#4B3AC5', '#3AC5C4', '#00C9A7', '#C34A36', '#FEFEDF', '#f502f1'],
           chart: {
           height: 500,
           type: 'line',
