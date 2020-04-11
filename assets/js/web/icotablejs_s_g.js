@@ -586,7 +586,7 @@ se.push(Number(e.gsx$se.$t));
 ie.push(Number(e.gsx$au.$t));
 au.push(Number(e.gsx$ie.$t));
 no.push(Number(e.gsx$no.$t));
-ind.push(Number(e.gsx$in.$t));
+ind.push(Number(e.gsx$ind.$t));
 cl.push(Number(e.gsx$cl.$t));
 dk.push(Number(e.gsx$dk.$t));
 cz.push(Number(e.gsx$cz.$t));
@@ -803,7 +803,7 @@ se_d.push(Number(e.gsx$sed.$t));
 ie_d.push(Number(e.gsx$aud.$t));
 au_d.push(Number(e.gsx$ied.$t));
 no_d.push(Number(e.gsx$nod.$t));
-ind_d.push(Number(e.gsx$ind.$t));
+ind_d.push(Number(e.gsx$indd.$t));
 cl_d.push(Number(e.gsx$cld.$t));
 dk_d.push(Number(e.gsx$dkd.$t));
 cz_d.push(Number(e.gsx$czd.$t));
@@ -1506,9 +1506,15 @@ $('#sparkline_tl_d').sparkline(tl_d, {type: "bar", width: '100%', height: 100, b
 
 
 
+
   /////// deaths scripts end ////////
 
 
 
 
+
+
+
    });
+
+
