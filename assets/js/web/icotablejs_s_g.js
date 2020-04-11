@@ -561,7 +561,7 @@ var tl_d = [];
 
   data.feed.entry.forEach(e => {
 
-  labels.push(Number(e.gsx$label.$t));
+    labels.push(Number(e.gsx$label.$t));
 us.push(Number(e.gsx$us.$t));
 es.push(Number(e.gsx$es.$t));
 wrld.push(Number(e.gsx$wrld.$t));
@@ -608,7 +608,7 @@ pa.push(Number(e.gsx$pa.$t));
 fi.push(Number(e.gsx$fi.$t));
 th.push(Number(e.gsx$th.$t));
 qa.push(Number(e.gsx$qa.$t));
-dom.push(Number(e.gsx$do.$t));
+dom.push(Number(e.gsx$dom.$t));
 co.push(Number(e.gsx$co.$t));
 gr.push(Number(e.gsx$gr.$t));
 za.push(Number(e.gsx$za.$t));
@@ -825,7 +825,7 @@ pa_d.push(Number(e.gsx$pad.$t));
 fi_d.push(Number(e.gsx$fid.$t));
 th_d.push(Number(e.gsx$thd.$t));
 qa_d.push(Number(e.gsx$qad.$t));
-dom_d.push(Number(e.gsx$dod.$t));
+dom_d.push(Number(e.gsx$domd.$t));
 co_d.push(Number(e.gsx$cod.$t));
 gr_d.push(Number(e.gsx$grd.$t));
 za_d.push(Number(e.gsx$zad.$t));
