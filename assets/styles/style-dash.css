@@ -6,6 +6,29 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap");
 
 
+/* sparklines */
+.jqstooltip { 
+/* background-color: #c6e5f6 !important; */
+ 
+ padding: 1px !important; 
+
+ border-color: black !important; 
+ text-align: center !important;  
+
+  max-width: 800px !important; 
+ max-height: 800px !important;
+}
+
+.jqsfield { 
+ font-size: 18px !important; 
+ color: white !important; /*set the text color here */
+}
+
+
+
+
+
+
 /* datatable */
 table.dataTable tbody th, table.dataTable tbody td {
     padding: 8px 10px; /* e.g. change 8x to 4px here */
