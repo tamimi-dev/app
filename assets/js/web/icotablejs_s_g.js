@@ -19,6 +19,25 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
 
 
 
+/*
+$.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3FwF3iz1gizAOSprn7l0/ok01ra6/public/values?alt=json", function(data_g) {
+
+  var graData = data_g.feed.entry;
+
+  var j;
+  for (j = 0; j < graData.length; j++) {
+
+
+    var us = data_g.feed.entry[j]['gsx$us']['$t'];
+
+
+  }
+  
+
+});
+*/
+
+
 
 
 
@@ -30,6 +49,7 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/12Lyd3k0PRpe-Ie_LaeJaEPm3F
 $(document).ready(function() {
   $('#globe').dataTable({
     responsive: true,
+    pageLength: 250,
     "bServerSide": false,
     "bProcessing": true,
     "sAjaxDataProp": "feed.entry",
@@ -46,6 +66,7 @@ $(document).ready(function() {
  {
  targets: 10,
                 "sortable": false,
+                   
                 "render": function(ico) {
 
                     return  '<span id="sparkline_'+ico+'_c"></span>'
@@ -54,6 +75,7 @@ $(document).ready(function() {
  {
  targets: 11,
                 "sortable": false,
+                 
                 "render": function(ico) {
 
                     return  '<span id="sparkline_'+ico+'_d"></span>'
@@ -335,7 +357,7 @@ var ai = [];
 var vg = [];
 var bi = [];
 var ss = [];
-var nl = [];
+var nl_sp = [];
 var pg = [];
 var pm = [];
 var tl = [];
@@ -551,7 +573,7 @@ var ai_d = [];
 var vg_d = [];
 var bi_d = [];
 var ss_d = [];
-var nl_d = [];
+var nl_sp_d = [];
 var pg_d = [];
 var pm_d = [];
 var tl_d = [];
@@ -561,7 +583,7 @@ var tl_d = [];
 
   data.feed.entry.forEach(e => {
 
-    labels.push(e.gsx$label.$t);
+  labels.push(e.gsx$label.$t);
 us.push(Number(e.gsx$us.$t));
 es.push(Number(e.gsx$es.$t));
 wrld.push(Number(e.gsx$wrld.$t));
@@ -768,7 +790,7 @@ eh.push(Number(e.gsx$eh.$t));
 ai.push(Number(e.gsx$ai.$t));
 vg.push(Number(e.gsx$vg.$t));
 bi.push(Number(e.gsx$bi.$t));
-nl.push(Number(e.gsx$nl.$t));
+nl_sp.push(Number(e.gsx$nlsp.$t));
 pg.push(Number(e.gsx$pg.$t));
 ss.push(Number(e.gsx$ss.$t));
 pm.push(Number(e.gsx$pm.$t));
@@ -985,7 +1007,7 @@ eh_d.push(Number(e.gsx$ehd.$t));
 ai_d.push(Number(e.gsx$aid.$t));
 vg_d.push(Number(e.gsx$vgd.$t));
 bi_d.push(Number(e.gsx$bid.$t));
-nl_d.push(Number(e.gsx$nld.$t));
+nl_sp_d.push(Number(e.gsx$nlspd.$t));
 pg_d.push(Number(e.gsx$pgd.$t));
 ss_d.push(Number(e.gsx$ssd.$t));
 pm_d.push(Number(e.gsx$pmd.$t));
@@ -1501,6 +1523,11 @@ $('#sparkline_nl_d').sparkline(nl_d, {type: "bar", width: '100%', height: 100, b
 $('#sparkline_pg_d').sparkline(pg_d, {type: "bar", width: '100%', height: 100, barWidth: 5, barSpacing: 1, barColor: '#fc3944', fillColor: 'rgba(214, 127, 41,0.2)', tooltipSuffix: " Cases", tooltipFormat: '{{offset:offset}} {{value}}', tooltipValueLookups: { 'offset': labels} });
 $('#sparkline_pm_d').sparkline(pm_d, {type: "bar", width: '100%', height: 100, barWidth: 5, barSpacing: 1, barColor: '#fc3944', fillColor: 'rgba(214, 127, 41,0.2)', tooltipSuffix: " Cases", tooltipFormat: '{{offset:offset}} {{value}}', tooltipValueLookups: { 'offset': labels} });
 $('#sparkline_tl_d').sparkline(tl_d, {type: "bar", width: '100%', height: 100, barWidth: 5, barSpacing: 1, barColor: '#fc3944', fillColor: 'rgba(214, 127, 41,0.2)', tooltipSuffix: " Cases", tooltipFormat: '{{offset:offset}} {{value}}', tooltipValueLookups: { 'offset': labels} });
+
+
+
+
+
 
   /////// deaths scripts end ////////
 
